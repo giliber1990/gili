@@ -2,7 +2,7 @@ ReplicaNumber: 3
 
 containers:
   containerPort: 8080
-  image: 'docker.io/<giliber>/<gili>:v2'
+  image: 'docker.io/giliber/gili:v2'
   tag: 'base'
 
 service:
