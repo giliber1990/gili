@@ -9,6 +9,8 @@ spec:
       app: {{ .Release.Name }}
   template:
     metadata:
+      annotations:
+        checksum/config: {{ include (print $.Template.BasePath "/ConfigMap.yaml") . | sha256sum }}
       labels:
         app: {{ .Release.Name }}
     spec:
